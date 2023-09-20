@@ -51,11 +51,11 @@ function App() {
   }
 
   return (
-    <div style={{backgroundImage:`url(${bgImg})`, backgroundRepeat:"no-repeat", backgroundSize: "100% 100%"}} className="App">
+    <div style={{ backgroundImage: `url(${bgImg})`, backgroundRepeat: "no-repeat", backgroundSize: "100% 100%" }} className="App">
 
-      <h1>Weather App</h1>
+      <h1 className="head_1">Weather App</h1>
 
-      <Grid container spacing={2}>
+      <Grid container spacing={5}>
         {weatherDetails.map((item, index) => (
           <Grid sx={{ width: 500, p: 0 }} item xs={12} md={6} className="card-content">
             <WeatherCards
